@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+
+int dn,on=0,t=1 ;
+printf("enter decimal no")	
+scanf("%d",&dn);
+while(dn!=0){
+	on=on + (dn%8)*t;
+	dn=dn/8;
+	t=t*10;
+  }
+  printf("%d",on);
+  }
